@@ -17,21 +17,17 @@ Philosophy: might explain why I'm giving a talk on _ideas_ - and the rather long
 
 ---
 
-.with-small-margins[
-# Goal]
+# Goal
 
-whet your appetite!  
-
-![appetite](images/eat_carpet_2.jpg)
+Whet your appetite!  
 
 ---
 
 ## _Alien_ Technology
 
-.width-100[
-![alien technology](images/alien_technology.png)]
+![alien technology](images/alien_technology.png)
 
-**too-good-to-be-true** but also **foreign**
+**Too-good-to-be-true** but also **foreign**
 
 “Anyone could learn LISP in one day, except that if they already knew Fortran, it would take three days.” — Marvin Minsky 
 
@@ -60,29 +56,23 @@ whet your appetite!
 
 ---
 
-# Clojure ~= ClojureScript
+### For the purposes of this talk: Clojure ~= ClojureScript
 
 (unlike Java - JavaScript)
 
-???
-### One thing up front:
-For the purposes of this talk ...
-
 ---
 
-.with-small-margins[
-# Motivation to learn Clojure]
+# Motivation to learn Clojure
 
-.short[
 + modern LISP, good for FP]
-.short[+ Rich Hickey's "Simplicity Matters"]
-.short[+ learn Clojure to gain better access to Rich's _thinking_]
-.short[+ great community]
++ Rich Hickey's "Simplicity Matters"
++ learn Clojure to gain better access to Rich's _thinking_
++ great community
 
 ---
 
-.with-small-margins[
-# Why Om for a beginners talk?]
+
+# Why Om for a beginners talk?
 + "JavaScript MVC" in ClojureScript
 + first steps in the browser
 + **_tangible_ results** in a familiar environment
@@ -97,7 +87,7 @@ For the purposes of this talk ...
 
 ---
 
-background-image: url(images/dramatis_personae.jpg)
+![dramatis personae](images/dramatis_personae.jpg)
 
 ???
 
@@ -112,7 +102,7 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 
 ---
 
-background-image: url(images/lebowski.jpg)
+![Lebowski](images/lebowski.jpg)
 
 ???
 
@@ -122,10 +112,9 @@ background-image: url(images/lebowski.jpg)
 ---
 
 # Here are four core features of Clojure
-.as-georgia[
-# Boo when you can't imagine living with that.
-### Cheers also welcome.
-]
+
+### Boo when you can't imagine living with that.
+#### Cheers also welcome.
 
 ---
 
@@ -146,8 +135,7 @@ background-image: url(images/lebowski.jpg)
 
 ---
 
-.width-100[
-![elegant weapons](images/elegant_weapons.png)]
+![elegant weapons](images/elegant_weapons.png)
 
 ---
 
@@ -166,9 +154,9 @@ background-image: url(images/lebowski.jpg)
 
 ---
 
-.large[```clojure
+```clojure
 (+ 1 1)
-```]
+```
 
 + Code is data: the code above is a list
 + When writing macros, code can be manipulated like any other data - you can call functions like `map` on it etc.
@@ -177,13 +165,11 @@ background-image: url(images/lebowski.jpg)
 
 # Clojure is pragmatic
 
-.short[
 + dynamic
 + impurely functional
 + runs on:
   - the JVM (Clojure)
   - JavaScript engines (ClojureScript)
-]
 
 ???
 ### To sum up
@@ -204,16 +190,13 @@ background-image: url(images/lebowski.jpg)
 
 ---
 
-.with-small-margins[
-### Clojure compiler]
-.short[
+### Clojure compiler
+
 + is written in Java
 + compiles Clojure code to Java bytecode
-]
 
-.with-small-margin-bottom[
 ### ClojureScript Compiler]
-.short[
+
 + compiles a subset of Clojure code to JavaScript
 + has Clojure semantics]
 
@@ -224,10 +207,8 @@ background-image: url(images/lebowski.jpg)
 
 ---
 
-.with-small-margins[
-# ToC v2: Ideas]
+# ToC v2: Ideas
 
-.extra-short.medium[
 + simplicity (Clojure)
 + trees / immutable persistent data structures (Clojure)
 
@@ -236,7 +217,6 @@ background-image: url(images/lebowski.jpg)
 + power of immutable data structures
 + global app state
 + (core.async) - not covered :(
-]
 
 ???
 # Time for our real roadmap:
@@ -248,22 +228,19 @@ this is about _ideas_ after all.
 
 "We can make the same exact software we are making today with dramatically simpler stuff. Radically simpler than Ruby, which seems really simple. Why aren't we?"
 
-.medium[
-Rich Hickey. 2012. "Simplicity matters".]
+Rich Hickey. 2012. "Simplicity matters".
 
 ???
 If there's one thing to take away from this talk then it's to watch this talk.
 
 ---
 
-.with-small-margins[
-# Simple]
+# Simple
 
 "Simple is the opposite of complex. A thing is simple if it has no interleaving, if it has one purpose, one concept, one dimension, one task.  
 Being simple does not imply one instance or one operation: it's about interleaving, not cardinality. Importantly, this means that simplicity is objective."
 
-.medium[
-Rich Hickey. "Simple made easy".]
+Rich Hickey. "Simple made easy".
 
 ???
 + the good one
@@ -273,35 +250,28 @@ Rich Hickey. "Simple made easy".]
 # Easy
 Easy is the opposite of hard, or difficult. A thing is easy if it's near to hand, if it's easy to get at (location), if it's near to our understanding (__familiarity__) [...] This means that ease is __relative__.
 
-.medium[
-Rich Hickey. "Simple made easy".]
+Rich Hickey. "Simple made easy".
 
 ---
 
 # Example
 "Speaking English is dead easy for me, but that doesn't mean that speaking English is intrinsically simple. I find French quite difficult. Little French children speak French all the time, [...] It's easy for them, it lies near to them."
 
-.medium[
-Rich Hickey. "Simple made easy".]
+Rich Hickey. "Simple made easy".
 
 ---
 
-.with-small-margins[
-# Summary]
+# Summary
 
-.with-small-margins[
-### Simple]
-.short[
+### Simple
 + opposite of complex (braided, interwoven)
 + about one thing
-+ objective]
++ objective
 
-.with-small-margins[
-### Easy]
-.short[
+### Easy
 + opposite of hard
 + relative
-+ easy for me -vs- easy for you]
++ easy for me -vs- easy for you
 
 ---
 
@@ -313,8 +283,8 @@ Rich Hickey. "Simple made easy".]
 + Deutsch: einfach (simple) -vs- leicht (easy)
 
 ---
-class: background-cover
-background-image: url(images/more_ancestors_than_jesus.png)
+
+![more_ancestors_than_jesus](images/more_ancestors_than_jesus.png)
 
 ---
 
@@ -323,9 +293,8 @@ background-image: url(images/more_ancestors_than_jesus.png)
 + state, objects - values
 + ORM - unadorned data
 
-.medium[
 "Simplicity Matters"  
-(http://youtu.be/rI8tNMsozo0?t=21m41s)]
+(http://youtu.be/rI8tNMsozo0?t=21m41s)
 
 ???
 + here's a list of complex-simple examples
@@ -381,7 +350,7 @@ my_vec
 
 ---
 
-background-image: url(images/linked_list.png)
+![linked list](images/linked_list.png)
 
 ???
 
@@ -390,7 +359,7 @@ background-image: url(images/linked_list.png)
 
 ---
 
-background-image: url(images/break_necks.jpg)
+![break necks](images/break_necks.jpg)
 
 ???
 ### Now the breakneck part.
