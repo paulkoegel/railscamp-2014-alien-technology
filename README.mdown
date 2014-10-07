@@ -79,6 +79,8 @@ Whet your appetite!
 
 ![dramatis personae](images/dramatis_personae.jpg)
 
+Photos of David Nolen and Rich Hickey © and courtesy of <a href="https://secure.flickr.com/photos/lucasbridge">Mike Bridge</a>. Sources: <a href="https://secure.flickr.com/photos/lucasbridge/8058449485/in/photostream">David</a>, <a href="https://secure.flickr.com/photos/lucasbridge/8058501680">Rich</a>.
+
 ### The men behind this
 
 LISP: 1958; Fortran 1956
