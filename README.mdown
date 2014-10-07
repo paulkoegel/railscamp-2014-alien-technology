@@ -21,11 +21,6 @@ Here are the slides in markdown:
 + Rails, JavaScript at Railslove by day
 + Increasingly more Clojure at night
 
-???
-I'm actually a philosophy and English literature graduate who's found his way into web development.  
-
-Philosophy: might explain why I'm giving a talk on _ideas_ - and the rather long title of my talk :)
-
 ---
 
 # Goal
@@ -49,21 +44,11 @@ Whet your appetite!
 + not a tutorial, very little code
 + aiming for breadth over in-depth
 
-???
-+ rolling >=2 talks into one (my path)
-+ in case it's escaped you - I hid the words "breakneck journey" in that title
-+ cannot go in-depth
-
 ---
 
 # ToC v1:
 + Clojure (FP, LISP)
 + Om (React, ClojureScript)
-
-???
-### So here's our schedule
-+ 2 parts
-+ with ... lurking in the background
 
 ---
 
@@ -90,19 +75,11 @@ Whet your appetite!
 
 -> I built a card game called "Omingard"
 
-???
-### AFTER:
-+ Go beyond programming puzzles
-+ Clojure -> Om: a lot of new teacups stacked
-+ Omingard: not covered here, writing detailed blog post
-
 ---
 
 ![dramatis personae](images/dramatis_personae.jpg)
 
-???
-
-### These are the men behind this
+### The men behind this
 
 LISP: 1958; Fortran 1956
 List Processing
@@ -114,11 +91,6 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 ---
 
 ![Lebowski](images/lebowski.jpg)
-
-???
-
-+ stack of teacups
-+ "Clojure is tying this talk together!"
 
 ---
 
@@ -158,9 +130,7 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 + Clojure: `(+ 7 (* 3 4))`
 
 
-???
-
-+ homo: code has same structure as the abstract syntax tree
++ homoiconicity: code has same structure as the abstract syntax tree
 + in Ruby this isn't the case; interpreter has to know about operator precedence and so do you
 
 ---
@@ -176,16 +146,12 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 
 # Clojure is pragmatic
 
++ pragmatic versus academic (Haskell)
 + dynamic
-+ impurely functional
++ impurely functional (you can mutate special reference types - e.g. atoms)
 + runs on:
   - the JVM (Clojure)
   - JavaScript engines (ClojureScript)
-
-???
-### To sum up
-+ versus academic (Haskell)
-+ impure: you can mutate special reference tpyes (atoms)
 
 ---
 
@@ -195,9 +161,7 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 + embraces **immutability** &amp; values
   - good for concurrency
 
-???
 + immutability is widely seen as the more important one!
-+ won't have time for concurrency
 
 ---
 
@@ -209,11 +173,9 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 ### ClojureScript Compiler]
 
 + compiles a subset of Clojure code to JavaScript
-+ has Clojure semantics]
-
-???
 + subset: single thread, can't do some Clojure stuff
-+ we treat them as one language targeting two platforms - Java doesn't run everywhere...
++ we treat them as one language here targeting two platforms - Java doesn't run everywhere after all :)
++ has Clojure semantics
 + Clojure compilation contains more than CoffeeScript compilation, since it remodels Clojure data structures in JavaScript
 
 ---
@@ -229,10 +191,6 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 + global app state
 + (core.async) - not covered :(
 
-???
-# Time for our real roadmap:
-this is about _ideas_ after all.
-
 ---
 
 # Clojure: Simplicity
@@ -241,24 +199,20 @@ this is about _ideas_ after all.
 
 Rich Hickey. 2012. "Simplicity matters".
 
-???
 If there's one thing to take away from this talk then it's to watch this talk.
 
 ---
 
-# Simple
+# Simple (the good one)
 
 "Simple is the opposite of complex. A thing is simple if it has no interleaving, if it has one purpose, one concept, one dimension, one task.  
 Being simple does not imply one instance or one operation: it's about interleaving, not cardinality. Importantly, this means that simplicity is objective."
 
 Rich Hickey. "Simple made easy".
 
-???
-+ the good one
-
 ---
 
-# Easy
+# Easy (potentially a false friend)
 Easy is the opposite of hard, or difficult. A thing is easy if it's near to hand, if it's easy to get at (location), if it's near to our understanding (__familiarity__) [...] This means that ease is __relative__.
 
 Rich Hickey. "Simple made easy".
@@ -290,8 +244,7 @@ Rich Hickey. "Simple made easy".
 + mistake easy for simple things
 + `gem install hairball`
 
-???
-+ Deutsch: einfach (simple) -vs- leicht (easy)
++ German: einfach (simple) -vs- leicht (easy)
 
 ---
 
@@ -306,10 +259,6 @@ Rich Hickey. "Simple made easy".
 
 "Simplicity Matters"  
 (http://youtu.be/rI8tNMsozo0?t=21m41s)
-
-???
-+ here's a list of complex-simple examples
-+ can't go into details
 
 ---
 
@@ -333,7 +282,6 @@ x
 => "MIXED CASE" # (same object_id)
 ```
 
-???
 + thank God there's normal `upcase` as well, so mutation is not the default, but it's possible. And we mutate arrays or hashes all over the place.
 + Clojure: immutable. Easier-to-reason-about applications. 
 
@@ -363,8 +311,6 @@ my_vec
 
 ![linked list](images/linked_list.png)
 
-???
-
 + Works like git, only small diffes are kept to create second vector.
 + important for Om
 
@@ -372,7 +318,6 @@ my_vec
 
 ![break necks](images/break_necks.jpg)
 
-???
 ### Now the breakneck part.
 + Buckle your seatbelt.
 + There will be a lot more details on this in the upcoming blog post!
@@ -398,8 +343,6 @@ my_vec
 + React:
   data -> templates -> virtual DOM -> DOM
 
-???
-
 + data: models, JSON
 + templates: handlebars etc.
 
@@ -420,7 +363,6 @@ my_vec
 ### React
 + if any part of our app's data changes, we can just rerender EVERYTHING.
 
-???
 + frameworks like Ember do a lot for you behind the scenes to remain performant and make your life easier (remember simplicity!?) - React is just way _simpler_ than that.
 
 ---
@@ -430,7 +372,6 @@ my_vec
 + Om benefits from ClojureScript's immutable data structures
 + even faster diffing
 
-???
 + faster diffing: only reference equality checks -vs- traversing the entire JSON structure.
 
 ---
