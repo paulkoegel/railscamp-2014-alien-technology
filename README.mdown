@@ -92,10 +92,6 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 
 ---
 
-![Lebowski](images/lebowski.jpg)
-
----
-
 # Here are four core features of Clojure
 
 ### Boo when you can't imagine living with that.
