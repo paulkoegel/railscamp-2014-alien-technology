@@ -29,14 +29,14 @@ Philosophy: might explain why I'm giving a talk on _ideas_ - and the rather long
 
 whet your appetite!  
 
-![appetite](pimages/eat_carpet_2.jpg)
+![appetite](images/eat_carpet_2.jpg)
 
 ---
 
 ## _Alien_ Technology
 
 .width-100[
-![alien technology](pimages/alien_technology.png)]
+![alien technology](images/alien_technology.png)]
 
 **too-good-to-be-true** but also **foreign**
 
@@ -104,7 +104,7 @@ For the purposes of this talk ...
 
 ---
 
-background-image: url(pimages/dramatis_personae.jpg)
+background-image: url(images/dramatis_personae.jpg)
 
 ???
 
@@ -119,7 +119,7 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 
 ---
 
-background-image: url(pimages/lebowski.jpg)
+background-image: url(images/lebowski.jpg)
 
 ???
 
@@ -154,7 +154,7 @@ background-image: url(pimages/lebowski.jpg)
 ---
 
 .width-100[
-![elegant weapons](pimages/elegant_weapons.png)]
+![elegant weapons](images/elegant_weapons.png)]
 
 ---
 
@@ -321,7 +321,7 @@ Rich Hickey. "Simple made easy".]
 
 ---
 class: background-cover
-background-image: url(pimages/more_ancestors_than_jesus.png)
+background-image: url(images/more_ancestors_than_jesus.png)
 
 ---
 
@@ -388,7 +388,7 @@ my_vec
 
 ---
 
-background-image: url(pimages/linked_list.png)
+background-image: url(images/linked_list.png)
 
 ???
 
@@ -397,7 +397,7 @@ background-image: url(pimages/linked_list.png)
 
 ---
 
-background-image: url(pimages/break_necks.jpg)
+background-image: url(images/break_necks.jpg)
 
 ???
 ### Now the breakneck part.
@@ -413,7 +413,7 @@ background-image: url(pimages/break_necks.jpg)
 ---
 
 # Killer Feature: Virtual DOM
-+ ![DOOM 3 rendering engine](pimages/react_doom_3_rendering.png)
++ ![DOOM 3 rendering engine](images/react_doom_3_rendering.png)
 
 ---
 
