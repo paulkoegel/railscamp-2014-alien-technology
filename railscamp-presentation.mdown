@@ -17,17 +17,21 @@ Philosophy: might explain why I'm giving a talk on _ideas_ - and the rather long
 
 ---
 
-# Goal
+.with-small-margins[
+# Goal]
 
-Whet your appetite!  
+whet your appetite!  
+
+![appetite](images/eat_carpet_2.jpg)
 
 ---
 
 ## _Alien_ Technology
 
-![alien technology](images/alien_technology.png)
+.width-100[
+![alien technology](images/alien_technology.png)]
 
-**Too-good-to-be-true** but also **foreign**
+**too-good-to-be-true** but also **foreign**
 
 “Anyone could learn LISP in one day, except that if they already knew Fortran, it would take three days.” — Marvin Minsky 
 
@@ -56,23 +60,29 @@ Whet your appetite!
 
 ---
 
-### For the purposes of this talk: Clojure ~= ClojureScript
+# Clojure ~= ClojureScript
 
 (unlike Java - JavaScript)
 
+???
+### One thing up front:
+For the purposes of this talk ...
+
 ---
 
-# Motivation to learn Clojure
+.with-small-margins[
+# Motivation to learn Clojure]
 
+.short[
 + modern LISP, good for FP]
-+ Rich Hickey's "Simplicity Matters"
-+ learn Clojure to gain better access to Rich's _thinking_
-+ great community
+.short[+ Rich Hickey's "Simplicity Matters"]
+.short[+ learn Clojure to gain better access to Rich's _thinking_]
+.short[+ great community]
 
 ---
 
-
-# Why Om for a beginners talk?
+.with-small-margins[
+# Why Om for a beginners talk?]
 + "JavaScript MVC" in ClojureScript
 + first steps in the browser
 + **_tangible_ results** in a familiar environment
@@ -87,7 +97,7 @@ Whet your appetite!
 
 ---
 
-![dramatis personae](images/dramatis_personae.jpg)
+background-image: url(images/dramatis_personae.jpg)
 
 ???
 
@@ -102,7 +112,7 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 
 ---
 
-![Lebowski](images/lebowski.jpg)
+background-image: url(images/lebowski.jpg)
 
 ???
 
@@ -112,9 +122,10 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 ---
 
 # Here are four core features of Clojure
-
-### Boo when you can't imagine living with that.
-#### Cheers also welcome.
+.as-georgia[
+# Boo when you can't imagine living with that.
+### Cheers also welcome.
+]
 
 ---
 
@@ -135,7 +146,8 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 
 ---
 
-![elegant weapons](images/elegant_weapons.png)
+.width-100[
+![elegant weapons](images/elegant_weapons.png)]
 
 ---
 
@@ -154,9 +166,9 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 
 ---
 
-```clojure
+.large[```clojure
 (+ 1 1)
-```
+```]
 
 + Code is data: the code above is a list
 + When writing macros, code can be manipulated like any other data - you can call functions like `map` on it etc.
@@ -165,11 +177,13 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 
 # Clojure is pragmatic
 
+.short[
 + dynamic
 + impurely functional
 + runs on:
   - the JVM (Clojure)
   - JavaScript engines (ClojureScript)
+]
 
 ???
 ### To sum up
@@ -190,13 +204,16 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 
 ---
 
-### Clojure compiler
-
+.with-small-margins[
+### Clojure compiler]
+.short[
 + is written in Java
 + compiles Clojure code to Java bytecode
+]
 
+.with-small-margin-bottom[
 ### ClojureScript Compiler]
-
+.short[
 + compiles a subset of Clojure code to JavaScript
 + has Clojure semantics]
 
@@ -207,8 +224,10 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 
 ---
 
-# ToC v2: Ideas
+.with-small-margins[
+# ToC v2: Ideas]
 
+.extra-short.medium[
 + simplicity (Clojure)
 + trees / immutable persistent data structures (Clojure)
 
@@ -217,6 +236,7 @@ Om: ClojureScript interface for React; "JavaScript MVC"; last December
 + power of immutable data structures
 + global app state
 + (core.async) - not covered :(
+]
 
 ???
 # Time for our real roadmap:
@@ -228,19 +248,22 @@ this is about _ideas_ after all.
 
 "We can make the same exact software we are making today with dramatically simpler stuff. Radically simpler than Ruby, which seems really simple. Why aren't we?"
 
-Rich Hickey. 2012. "Simplicity matters".
+.medium[
+Rich Hickey. 2012. "Simplicity matters".]
 
 ???
 If there's one thing to take away from this talk then it's to watch this talk.
 
 ---
 
-# Simple
+.with-small-margins[
+# Simple]
 
 "Simple is the opposite of complex. A thing is simple if it has no interleaving, if it has one purpose, one concept, one dimension, one task.  
 Being simple does not imply one instance or one operation: it's about interleaving, not cardinality. Importantly, this means that simplicity is objective."
 
-Rich Hickey. "Simple made easy".
+.medium[
+Rich Hickey. "Simple made easy".]
 
 ???
 + the good one
@@ -250,28 +273,35 @@ Rich Hickey. "Simple made easy".
 # Easy
 Easy is the opposite of hard, or difficult. A thing is easy if it's near to hand, if it's easy to get at (location), if it's near to our understanding (__familiarity__) [...] This means that ease is __relative__.
 
-Rich Hickey. "Simple made easy".
+.medium[
+Rich Hickey. "Simple made easy".]
 
 ---
 
 # Example
 "Speaking English is dead easy for me, but that doesn't mean that speaking English is intrinsically simple. I find French quite difficult. Little French children speak French all the time, [...] It's easy for them, it lies near to them."
 
-Rich Hickey. "Simple made easy".
+.medium[
+Rich Hickey. "Simple made easy".]
 
 ---
 
-# Summary
+.with-small-margins[
+# Summary]
 
-### Simple
+.with-small-margins[
+### Simple]
+.short[
 + opposite of complex (braided, interwoven)
 + about one thing
-+ objective
++ objective]
 
-### Easy
+.with-small-margins[
+### Easy]
+.short[
 + opposite of hard
 + relative
-+ easy for me -vs- easy for you
++ easy for me -vs- easy for you]
 
 ---
 
@@ -283,8 +313,8 @@ Rich Hickey. "Simple made easy".
 + Deutsch: einfach (simple) -vs- leicht (easy)
 
 ---
-
-![more_ancestors_than_jesus](images/more_ancestors_than_jesus.png)
+class: background-cover
+background-image: url(images/more_ancestors_than_jesus.png)
 
 ---
 
@@ -293,8 +323,9 @@ Rich Hickey. "Simple made easy".
 + state, objects - values
 + ORM - unadorned data
 
+.medium[
 "Simplicity Matters"  
-(http://youtu.be/rI8tNMsozo0?t=21m41s)
+(http://youtu.be/rI8tNMsozo0?t=21m41s)]
 
 ???
 + here's a list of complex-simple examples
@@ -350,7 +381,7 @@ my_vec
 
 ---
 
-![linked list](images/linked_list.png)
+background-image: url(images/linked_list.png)
 
 ???
 
@@ -359,7 +390,7 @@ my_vec
 
 ---
 
-![break necks](images/break_necks.jpg)
+background-image: url(images/break_necks.jpg)
 
 ???
 ### Now the breakneck part.
